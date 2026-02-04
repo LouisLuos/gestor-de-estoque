@@ -1,5 +1,5 @@
 export default function Dashboard() {
     return (
-        <h1>Dashboard dos items</h1>
+        <h1 className="h1 fw-light">Dashboard</h1>
     )
 }
