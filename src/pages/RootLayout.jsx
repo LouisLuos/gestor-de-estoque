@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function RootLayout() {
   return (
-    <div className="container-fluid bg-dark text-white d-flex flex-column min-vh-100">
+    <div className="container-fluid px-3 bg-dark text-white d-flex flex-column min-vh-100">
       <header className="header py-3 border-bottom border-secondary mb-4">
         <nav className="d-flex justify-content-between align-items-center">
           <h1 className="h5 mb-0">Stock React</h1>
@@ -18,7 +18,7 @@ export default function RootLayout() {
         </nav>
       </header>
 
-      <main className="flex-grow-1">
+      <main className="flex-grow-1 ">
         <Outlet />
       </main>
 

@@ -1,5 +1,22 @@
+import CardDashboard from "../../components/CardsDashBoards/CardDashboard"
+
 export default function Dashboard() {
     return (
-        <h1 className="h1 fw-light">Dashboard</h1>
+        
+        <div>
+            <div className="mb-4">
+                <h1>Dashboard</h1>
+            </div>
+            <div className="d-flex gap-5">
+                <CardDashboard />
+                <CardDashboard />
+                <CardDashboard />
+                <CardDashboard />
+            </div>
+            
+            <div>
+                
+            </div>
+        </div>
     )
 }
