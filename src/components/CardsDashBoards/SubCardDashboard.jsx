@@ -1,10 +1,12 @@
-
-
-export default function SubCardDashboard() {
-    return (
-        <div className="border px-3 my-4 bg-dark rounded d-flex w-50 justify-content-between align-items-center">
-            <h5>Items Recentes</h5>
-            <p className="ms-auto">Ações</p>
-        </div>
-    )
+// src/components/CardsDashBoards/SubCardDashboard.jsx
+export default function SubCardDashboard({ title }) {
+  return (
+    <div className="card bg-dark text-white border-secondary mb-3">
+      <div className="card-body p-3">
+        <h5 className="card-title mb-0 fs-6 fw-semibold text-secondary">
+          {title}
+        </h5>
+      </div>
+    </div>
+  );
 }

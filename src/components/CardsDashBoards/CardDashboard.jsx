@@ -1,11 +1,13 @@
-
-
-
-export default function CardDashboard({itemInfo, quantidade}) {
+// src/components/CardsDashBoards/CardDashboard.jsx
+export default function CardDashboard({ itemInfo, quantidade }) {
   return (
-    <div className="card bg-black text-white" style={{ width: "25%", height: "10rem"}}>
-        <div className="card-header px-4">{itemInfo}</div>
-      <div className="card-body d-flex justify-content-center align-items-center fs-1">{quantidade}</div>
+    <div className="card bg-dark text-white border-secondary shadow-sm">
+      <div className="card-header px-4 border-secondary text-secondary small fw-bold">
+        {itemInfo}
+      </div>
+      <div className="card-body d-flex justify-content-center align-items-center py-4">
+        <span className="display-6 fw-bold">{quantidade}</span>
+      </div>
     </div>
   );
 }

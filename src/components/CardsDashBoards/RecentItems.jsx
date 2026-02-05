@@ -1,9 +1,8 @@
-export default function RecentItems({ nameItem}) {
-    return (
-        <div className="w-50 d-flex flex-column gap-3">
-            <p>{nameItem}</p>
-            <button className="btn btn-light text-dark">Ver</button>
-        </div>
-    )
-
+export default function RecentItems({ nameItem }) {
+  return (
+    <div className="d-flex justify-content-between align-items-center py-2 border-bottom border-secondary last-child-border-0">
+      <span className="text-light">{nameItem}</span>
+      <button className="btn btn-sm btn-outline-light">Ver</button>
+    </div>
+  );
 }
