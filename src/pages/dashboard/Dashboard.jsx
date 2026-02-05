@@ -1,4 +1,6 @@
 import CardDashboard from "../../components/CardsDashBoards/CardDashboard"
+import RecentItems from "../../components/CardsDashBoards/RecentItems"
+import SubCardDashboard from "../../components/CardsDashBoards/SubCardDashboard"
 
 export default function Dashboard() {
     return (
@@ -8,14 +10,16 @@ export default function Dashboard() {
                 <h1>Dashboard</h1>
             </div>
             <div className="d-flex gap-5">
-                <CardDashboard />
-                <CardDashboard />
-                <CardDashboard />
-                <CardDashboard />
+                <CardDashboard itemInfo={"Diversidade de Itens"} quantidade={120} />
+                <CardDashboard itemInfo={"Iventário total"} quantidade={45} />
+                <CardDashboard itemInfo={"Itens recentes"} quantidade={5} />
+                <CardDashboard itemInfo={"Itens acabando"} quantidade={200} />
             </div>
             
-            <div>
-                
+            <div className="d-flex gap-5 align-items-center">
+                <SubCardDashboard />
+                <SubCardDashboard />
+                <RecentItems nameItem={"Notebook Dell Inspiron"} />
             </div>
         </div>
     )

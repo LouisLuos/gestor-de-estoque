@@ -1,0 +1,18 @@
+/* Define o fundo da página inteira como um preto profundo */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0d1117 !important; /* Cor de fundo bem escura */
+  color: #ffffff;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Sobrescreve a classe bg-dark do Bootstrap para ser realmente escura */
+.bg-dark {
+  background-color: #161b22 !important; /* Um cinza muito escuro para os cards */
+}
+
+/* Garante que as bordas secundárias fiquem visíveis mas discretas */
+.border-secondary {
+  border-color: #30363d !important;
+}

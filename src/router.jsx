@@ -6,7 +6,6 @@ import CreateItem from "./pages/itens/CreateItem";
 import DetailsItem from "./pages/itens/DetailsItem";
 import UpdateItem from "./pages/itens/UpdateItem";
 
-
 const router = createBrowserRouter([
   {
     path: "/",
