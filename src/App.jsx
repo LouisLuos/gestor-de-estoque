@@ -1,8 +1,12 @@
 import { RouterProvider } from "react-router-dom";
 import router from "./router";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import StockContextProvider from "./contexts/StockContexts"; // Certifique-se do nome correto
 
 export default function App() {
-
-  return <RouterProvider router={router}></RouterProvider>
+  return (
+    // O Provider DEVE envolver o RouterProvider
+    <StockContextProvider>
+      <RouterProvider router={router} />
+    </StockContextProvider>
+  );
 }

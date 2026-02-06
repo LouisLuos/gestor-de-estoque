@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import RootLayout from "./pages/RootLayout";
-import Dashboard from "./pages/Dashboard/Dashboard";
+import Dashboard from "./pages/dashboard/Dashboard";
+import ItemsLayout from "./pages/itens/ItemsLayout";
 import ListItems from "./pages/itens/ListItems";
 import CreateItem from "./pages/itens/CreateItem";
 import DetailsItem from "./pages/itens/DetailsItem";
@@ -14,6 +15,7 @@ const router = createBrowserRouter([
       { index: true, element: <Dashboard /> },
       {
         path: "items",
+        element: <ItemsLayout />, 
         children: [
           { index: true, element: <ListItems /> },
           { path: "create", element: <CreateItem /> },
